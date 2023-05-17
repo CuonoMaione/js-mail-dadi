@@ -21,4 +21,26 @@ if (x > y) {
 
  document.getElementById("firstplayer").innerHTML = "Player 1 = " + x ;
  document.getElementById("secondplayer").innerHTML = "Player 2 = " + y ;
+
+
 })
+
+const buttonmail = document.getElementById("buttonmail");
+const mail = ("gigio@hotmail.it" , "simone@outlook.it" , "antonio@gmail.com") ;
+
+buttonmail.addEventListener("click", function(){
+
+    let Usermail = document.getElementById("User");
+    const mail = ("gigio@hotmail.it" , "simone@outlook.it" , "antonio@gmail.com") ;
+
+    if ( Usermail.value == mail[0] ) {
+        document.getElementById("prova").innerHTML = "Giusto"
+    } else if ( Usermail.value != mail ){
+        document.getElementById("prova").innerHTML = "FALSO"
+    };
+}
+)
+
+
+
+
