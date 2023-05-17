@@ -19,6 +19,6 @@ if (x > y) {
     document.getElementById("esito").innerHTML= "DRAW"
 };
 
- document.getElementById("firstplayer").innerHTML += x ;
- document.getElementById("secondplayer").innerHTML += y ;
+ document.getElementById("firstplayer").innerHTML = "Player 1 = " + x ;
+ document.getElementById("secondplayer").innerHTML = "Player 2 = " + y ;
 })
