@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+main{
+    background-color: red;
+    height: 100vh;
+}
+
+section{
+
+    background-color: darkblue;
+    color: orangered;
+    padding: 3rem;
+    max-width: 800px;
+    margin:auto;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+button{
+    padding: 1rem;
+    border: lime 3px double;
+    background-color: magenta;
+    color: darkblue;
+    font-size: 1rem;
+}
+
+button:hover{
+    transform: scale(2);
+}
+
+
+
+h1{
+    color: cyan;
+    font-size: 4rem;
+}
+
+#prova,
+#esito{
+    color: white;
+    font-size: 3rem;
+}
+
+#firstplayer,
+#secondplayer{
+    display: inline-block;
+    margin:2rem;
+}
+

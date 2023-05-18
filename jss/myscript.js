@@ -26,20 +26,32 @@ if (x > y) {
 })
 
 const buttonmail = document.getElementById("buttonmail");
-const mail = ("gigio@hotmail.it" , "simone@outlook.it" , "antonio@gmail.com") ;
+const mail = ["gigio@hotmail.it" , "simone@outlook.it" , "antonio@gmail.com"] ;
+
 
 buttonmail.addEventListener("click", function(){
 
     let Usermail = document.getElementById("User");
-    const mail = ("gigio@hotmail.it" , "simone@outlook.it" , "antonio@gmail.com") ;
+   
+    let mailfound = false;
 
-    if ( Usermail.value == mail[0] ) {
-        document.getElementById("prova").innerHTML = "Giusto"
-    } else if ( Usermail.value != mail ){
+    for (let i = 0; i < mail.length ; i++) {
+        
+        if(mail[i] == Usermail.value){
+            mailfound= true;
+        }
+    
+    }
+
+    if ( mailfound ) {
+        document.getElementById("prova").innerHTML = "GIUSTO"
+    } else {
         document.getElementById("prova").innerHTML = "FALSO"
-    };
+    }
 }
 )
+
+
 
 
 
