@@ -31,9 +31,13 @@ button{
 }
 
 button:hover{
-    transform: scale(2);
+    transform: scale(1.5);
+    margin-bottom: 2rem;
 }
 
+button:active{
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+}
 
 
 h1{
@@ -45,6 +49,8 @@ h1{
 #esito{
     color: white;
     font-size: 3rem;
+    background-color: red;
+    border:solid 3px white;
 }
 
 #firstplayer,
